@@ -4,6 +4,10 @@
   justify-content: center;
   padding: 15px;
 }
+.bannerdau {
+  max-width: 100%;
+  margin-left: -350px;
+}
 .danhmuc-lienket {
   margin: 50px auto;
   font-family: Roboto, Arial, Tahoma;
@@ -246,7 +250,7 @@ footer {
 }
 .dt1 {
   margin: auto 5px;
-  border: solid #e7e8ea 1px;
+  border: solid #e7e8ea 3px;
 }
 .media {
   display: flex;
@@ -255,7 +259,12 @@ footer {
   margin-right: 50px;
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 .tuyentruyen {
   font-size: 20px;
+}
+.noidung4 a {
+  text-decoration: none;
+  color: white;
 }
