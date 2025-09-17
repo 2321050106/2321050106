@@ -2,15 +2,38 @@ body {
   margin: 0;
 }
 main {
-  width: 50%;
-  height: 600px;
+  width: 80%;
+  height: 800px;
   margin: 50px auto;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
 }
+.container {
+  width: 70%;
+  height: 90%;
+  margin: auto;
+  background-color: rgb(226, 224, 221);
+  display: flex;
+  justify-content: space-around;
+}
 .top {
-  width: 90%;
+  width: 40%;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.top img {
+  width: 80%;
+  height: 80%;
+}
+.top a {
+  color: black;
+  margin-left: 70px;
+  font-size: 25px;
+}
+.right {
+  width: 40%;
+  margin-top: 90px;
 }
 .input {
   width: 80%;
@@ -18,13 +41,44 @@ main {
   justify-content: space-between;
   border: 1px solid black;
   padding: 10px 0;
+  font-size: 30px;
 }
 .input input {
-  width: 80%;
+  width: 200%;
   border: none;
 }
-.remember {
+.title {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.rm {
+  display: flex;
+  font-size: 20px;
+}
+.li {
+  width: 30%;
+}
+.li button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+  background-color: rgb(96, 192, 231);
+  border-radius: 10px;
+}
+.icon {
+  font-size: 30px;
+  display: flex;
+  margin-top: 50px;
+}
+.icon1 {
   display: flex;
   align-items: center;
-  padding: ;
+  margin-left: 10px;
+  color: brown;
+}
+.icon1 i {
+  margin-right: 10px;
 }

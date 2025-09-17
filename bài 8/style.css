@@ -12,27 +12,34 @@ header {
 }
 main {
   height: 70vh;
-  width: 40%;
+  width: 30%;
   margin: auto;
   background-color: #fff;
   border-radius: 10px;
 }
+p {
+  margin-left: 10px;
+}
 .main2 input {
-  width: 370px;
+  width: 165%;
   height: 40px;
   border-radius: 5px;
 }
 .main1 {
   font-size: 25px;
-  justify-content: center;
   width: 100%;
+}
+.main1 p,
+h2 {
+  display: flex;
+  justify-content: center;
 }
 .main2 {
   width: 100%;
-  border-top: solid 2px black;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: -60px;
 }
 .main3 {
   width: 100%;
@@ -62,14 +69,36 @@ main {
 }
 .main5 {
   width: 100%;
+  margin-left: 10px;
 }
-.dn {
-  width: 90%;
-  margin-top: 5px;
+.dn input {
+  width: 95%;
+  margin-top: 15px;
   height: 40px;
+  border-radius: 5px;
 }
-.mk {
-  width: 90%;
+.mk input {
+  width: 95%;
   height: 40px;
-  margin-top: 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.phancuoi a {
+  text-decoration: none;
+}
+.bt {
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(6, 235, 48);
+  border-radius: 5px;
+}
+.si a {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
