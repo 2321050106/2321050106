@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script>
+      //để viết chú thích trong js dùng kí tự //
+      document.write("xin chào! <br>"); //muốn xuống dòng trong js dùng br trong thẻ như bên
+      let hoTen = "Phạm Đức";
+      document.write(hoTen + "<br>"); //phương pháp nối chuỗi dùng dấu +
+      //khai báo hằng số
+      const pi = 3.14;
+
+      let sothu1 = 10;
+      let sothu2 = 5;
+      let ketqua = 0;
+      //+
+      ketqua = sothu1 + sothu2;
+      document.write(ketqua);
+
+      //-
+      ketqua = sothu1 - sothu2;
+      document.write("<br>" + ketqua);
+
+      //*
+      ketqua = sothu1 * sothu2;
+      document.write("<br>" + ketqua);
+
+      // /
+      ketqua = sothu1 / sothu2;
+      document.write("<br>" + ketqua);
+
+      // ++
+      ketqua = sothu1 / sothu2;
+      ketqua++;
+      document.write("<br>" + ketqua);
+      // phép gán
+      sothu1 += sothu2;
+      //sothu1 = sothu2 + sothu1
+      document.writeln("<br>" + sothu1);
+      // so sánh trong js không quan tâm đến kiểu dữ liệu chỉ quan tâm đến giá trị
+      // === quan tâm đến cả kiểu dữ liệu
+      let so1 = 10;
+      let so2 = "10";
+      document.writeln(!(so1 != so2));
+
+      let thongtinSinhvien = {
+        hoten: "Phạm Đức",
+        tuoi: 20,
+        gioiTinh: true,
+        lop: "Tin kinh tế k68",
+      };
+
+      let diaChicuaban = {
+        thanhPho: "Hải Dương",
+        quanHuyen: "Nam Sách",
+        xaPhuong: "Hợp Tiến",
+      };
+      thongtinSinhvien.diacHi = diaChicuaban;
+      document.writeln(
+        "<br>" +
+          "Xin chào bạn " +
+          thongtinSinhvien.hoten +
+          " lớp " +
+          thongtinSinhvien.lop +
+          " nhà ở " +
+          thongtinSinhvien.diacHi.xaPhuong +
+          "<br>"
+      );
+
+      let sothuhai = "10";
+
+      sothuhai = parseInt(sothuhai);
+
+      //typeof kiểm tra kiểu dữ liệu
+
+      document.writeln(typeof sothuhai);
+    </script>
+  </body>
+</html>

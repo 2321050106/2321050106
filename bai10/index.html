@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai10</title>
+  </head>
+  <body>
+    <script>
+      let thongTinkhachhang = {
+        hoTen: "Phạm Đức",
+        soDienthoai: "0399596024",
+        trangThaitv: true,
+        danhSachsp: {
+          sp1: {
+            maSp: "coffe",
+            tenSp: "Cà Phê",
+            soLuong: 4,
+            gia: 15000,
+          },
+          sp2: {
+            maSp: "matcha",
+            tenSp: "Matcha",
+            soLuong: 7,
+            gia: 20000,
+          },
+          sp3: {
+            maSp: "trà sữa",
+            tenSp: "Trà sữa",
+            soLuong: 5,
+            gia: 20000,
+          },
+        },
+        trangThai: false,
+        diaChi: "Liên Mạc Hà Nội",
+      };
+      thanhTien =
+        thongTinkhachhang.danhSachsp.sp1.gia *
+          thongTinkhachhang.danhSachsp.sp1.soLuong +
+        thongTinkhachhang.danhSachsp.sp2.gia *
+          thongTinkhachhang.danhSachsp.sp2.soLuong +
+        thongTinkhachhang.danhSachsp.sp3.gia *
+          thongTinkhachhang.danhSachsp.sp3.soLuong;
+      document.write("Tổng số tiền của đơn hàng " + thanhTien + "<br>");
+
+      // string
+      let hoTen = "Phạm Đức";
+      document.write(hoTen.length + "<br>");
+
+      let myString = "Hello";
+      document.writeln(myString[4]);
+      document.writeln(myString.slice(1, 4));
+      document.writeln(myString.replace("Hello", "Hi"));
+      //chuyển đổi chữ hoa chữ thường
+      document.writeln(myString.toLocaleLowerCase());
+      //kiểm tra kí tự có tồn tại trong chuỗi hay không
+      //indexOf("kí tự cần tìm kiếm") có số lượng và tìm vị trí
+      //includes kiểm tra có tồn tại hay k true/false
+      document.writeln(myString.indexOf("l") + "<br>");
+
+      //tách chuỗi thành một mảng split
+      document.writeln(myString.split("e"));
+      //kiểm tra kí tự có bắt đầu bằng chuỗi đang tìm kiếm không
+      document.writeln(myString.startsWith("Hello"));
+      //làm tròn đến chữ số thứ mấy sau dấu phẩy
+      var pi = 3.1415977;
+      pi.toFixed(2);
+      document.writeln(pi);
+      document.writeln(isNaN(10));
+
+      let toDay = new Date("2005-07-04");
+      document.writeln("<br>" + toDay);
+      //lấy ra năm
+      document.writeln(toDay.getFullYear() + "<br>");
+      //lấy ra tháng
+      document.writeln(toDay.getMonth());
+      //lấy ra ngày
+      document.writeln(toDay.getDate());
+    </script>
+  </body>
+</html>
