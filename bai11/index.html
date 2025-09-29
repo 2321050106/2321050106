@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Mảng
+      let arr = [1, 2, 3, 4, "a", "b", "c", 2, 3];
+      //Array.isArray kiểm tra biến có phải mảng hay không
+      document.writeln(Array.isArray(arr));
+      //kiểm tra độ dài của mảng
+      document.writeln(arr.length);
+      //lấy ra phần tử thứ n --> n-1
+      document.writeln(arr[2]);
+      //kiểm tra phần tử có trong mảng hay không và trả về vị trí xuất hiện đầu tiên của nó
+      document.writeln(arr.indexOf(3));
+      //kiểm tra và trả về vị trí xuất hiện cuối cùng của phần tử
+      document.writeln(arr.lastIndexOf(3));
+      //truy cập vào và thay đổi phần tử
+      arr[3] = 6;
+      document.writeln(arr + "<br>");
+
+      let a, b, c, d;
+      a = [1, 2, 3];
+      b = "javascript";
+      c = [42, "JS"];
+      //concat dùng để nối các mảng lại vs nhau
+      d = a.concat(b, c);
+      //join dùng để biến một mảng thành một chuỗi
+      //   d = d.join("-");
+      //pod xóa đi phần tử cuối cùng trong mảng
+      //xóa phần tử đầu tiên trong mảng shift
+      d.pop();
+      //thêm 1 phần tử vào trong mảng
+      //unshift() thêm phần tử vào đầu mảng
+      d.push("9");
+      d.reverse();
+      document.writeln(d);
+      //debugger kiểm tra lỗi
+      let so = 10000000000000000001;
+      let soCuoi = parseInt(so[so.length - 1]);
+      if (soCuoi % 2 == 0) {
+        document.writeln(so + "là số chẵn");
+      } else {
+        document.writeln(so + "là số lẻ" + "<br>");
+      }
+
+      let now = new Date().getHours;
+      if (now > 5 && now < 10) {
+        document.writeln("chào buổi sáng");
+      } else if (now > 10 && now < 13) {
+        document.writeln("chào buổi trưa");
+      } else if (now > 13 && now < 17) {
+        document.writeln("chào buổi chiều");
+      } else if (now > 17 && now < 22) {
+        document.writeln("chào buổi tối");
+      } else {
+        document.writeln("chào buổi đêm");
+      }
+
+      let a, b, c, tb;
+      a = 6;
+      b = 8;
+      c = 4;
+      (tb = a * 0.6 + b * 0), 3 + c * 0.1;
+      if (tb >= 8) {
+        document.writeln("A");
+      } else if (tb >= 7 && tb < 8) {
+        document.writeln("B");
+      } else if (tb >= 5 && tb < 7) {
+        document.writeln("C");
+      } else if (tb >= 4 && tb < 5) {
+        document.writeln("D");
+      } else {
+        document.writeln("TRƯỢT");
+      }
+    </script>
+  </body>
+</html>
