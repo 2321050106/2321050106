@@ -58,15 +58,17 @@
       } else if (now > 17 && now < 22) {
         document.writeln("chào buổi tối");
       } else {
-        document.writeln("chào buổi đêm");
+        document.writeln("chào buổi đêm" + "<br>");
       }
 
-      let a, b, c, tb;
-      a = 6;
-      b = 8;
-      c = 4;
-      (tb = a * 0.6 + b * 0), 3 + c * 0.1;
-      if (tb >= 8) {
+      let tb;
+      a = 1;
+      b = 4;
+      c = 10;
+      tb = a * 0.6 + b * 0.3 + c * 0.1;
+      if (a < 0 || a > 10 || b < 0 || b > 10 || c < 0 || c > 10) {
+        document.writeln("điểm không hợp lệ");
+      } else if (tb >= 8 && tb <= 10) {
         document.writeln("A");
       } else if (tb >= 7 && tb < 8) {
         document.writeln("B");
@@ -74,8 +76,10 @@
         document.writeln("C");
       } else if (tb >= 4 && tb < 5) {
         document.writeln("D");
+      } else if (tb >= 0 && tb < 4) {
+        document.writeln("F");
       } else {
-        document.writeln("TRƯỢT");
+        document.writeln("điểm không hợp lệ");
       }
     </script>
   </body>
