@@ -1,0 +1,116 @@
+body {
+  background-color: black;
+  margin: 0;
+  color: white;
+}
+header {
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.container ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  width: 80%;
+  background-color: black;
+  height: 100%;
+  margin: auto;
+}
+.mainbanner1 img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.mainbanner2 img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.mainbanner3 img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.cayphim1 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 20px 8px 16px 0px;
+}
+.tenphim1 {
+  color: white;
+}
+.anh {
+  display: flex;
+}
+.phim img {
+  margin-right: 15px;
+  border-radius: 15px;
+}
+.ten {
+  width: 187px;
+}
+.danhmuc {
+  display: flex;
+}
+.danhmuc-noidung {
+  width: 187px;
+  height: 90px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+footer {
+  width: 80%;
+  height: auto;
+  border-top: 2px solid gray;
+  color: white;
+  margin: 50px auto;
+}
+.logo {
+  width: 187px;
+  margin-top: 20px;
+}
+.cuoitrang {
+  display: flex;
+}
+.noidung-cuoitrang ul {
+  list-style: none;
+  margin-right: 100px;
+  font-size: 15px;
+}
+.noidung-cuoitrang li {
+  margin-top: 10px;
+}
+.chantrang {
+  margin-top: 50px;
+  border-top: 2px solid gray;
+}
+.noidung-chan {
+  margin-top: 30px;
+  width: 70%;
+}
