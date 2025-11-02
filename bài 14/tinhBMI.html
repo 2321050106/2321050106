@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        height: 100vh;
+        width: 800px;
+        border-radius: 5px;
+        background-color: lightgoldenrodyellow;
+      }
+      img {
+        margin-top: 10px;
+      }
+      .noidung {
+        margin-left: 30%;
+      }
+      .container img {
+        height: 75%;
+        margin-left: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="noidung">
+        <h1>Tính chỉ số BMI</h1>
+        <div>
+          Nhập chiều cao (m)
+          <input type="number" id="chieuCao" />
+        </div>
+        <div>
+          Nhập cân nặng (kg)
+          <input type="number" id="canNang" />
+        </div>
+        <div>
+          <button onclick="tinhBMI('BMI')">BMI</button>
+          <div>Kết quả: <input type="number" id="bmi" class="BM-I" /></div>
+        </div>
+      </div>
+      <img width="300px" class="anh" src="./ảnh bt/anh1.jpg" alt="" />
+      <script>
+        function tinhBMI() {
+          let chieuCao = parseFloat(document.getElementById("chieuCao").value);
+          let canNang = parseFloat(document.getElementById("canNang").value);
+          let canhBao = "";
+          if (!chieuCao) {
+            canhBao += "Vui lòng nhập vào chiều cao";
+          }
+          if (!canNang) {
+            canhBao += "Vui lòng nhập vào cân nặng";
+          }
+          if (canhBao) {
+            alert(canhBao);
+          }
+          let ketQua = (canNang / (chieuCao * chieuCao)).toFixed(2);
+          document.getElementById("bmi").value = ketQua;
+          let bmiValue = parseFloat(ketQua);
+          if (ketQua < 18.5) {
+            document.getElementsByClassName("anh")[0].src = "ảnh bt/anh1.jpg";
+          } else if (ketQua >= 18.5 && ketQua < 24.9) {
+            document.getElementsByClassName("anh")[0].src = "ảnh bt/anh2.jpg";
+          } else if (ketQua >= 25 && ketQua < 29.9) {
+            document.getElementsByClassName("anh")[0].src = "ảnh bt/anh3.jpg";
+          } else if (ketQua >= 30 && ketQua < 39.9) {
+            document.getElementsByClassName("anh")[0].src = "ảnh bt/anh4.jpg";
+          } else {
+            document.getElementsByClassName("anh")[0].src = "ảnh bt/anh5.jpg";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
