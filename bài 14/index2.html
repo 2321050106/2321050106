@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,3 +45,51 @@
     </script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ví dụ về thay đổi chế độ</h1>
+      <img class="anh" src="./anhmattroi.png" style="width: 300px" />
+      <h1>chế độ tối</h1>
+      <button onclick="doichedo()">thay đổi chế độ</button>
+    </div>
+    <script>
+      let cheDo = true;
+      function doichedo() {
+        //nếu chế độ đang là sáng thì cheDo = false
+        if (cheDo) {
+          document.getElementsByTagName("body")[0].style.backgroundColor =
+            " black";
+          document.getElementsByTagName("h1")[0].style.color = "white";
+          document.getElementsByTagName("h1")[1].style.color = "white";
+          document.getElementsByTagName("h1")[1].innerHTML = "chế độ sáng";
+          document.getElementsByClassName("anh")[0].src = "./anhmattrang.png";
+          cheDo = false;
+        } else {
+          document.getElementsByTagName("body")[0].style.backgroundColor =
+            " white";
+          document.getElementsByTagName("h1")[0].style.color = "black";
+          document.getElementsByTagName("h1")[1].style.color = "black";
+          document.getElementsByTagName("h1")[1].innerHTML = "chế độ tối";
+          document.getElementsByClassName("anh")[0].src = "./anhmattroi.png";
+          cheDo = true;
+        }
+      }
+    </script>
+  </body>
+</html>
+>>>>>>> 120f7696b181a4c9a5704699316573ab044aceec

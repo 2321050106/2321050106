@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -51,3 +52,58 @@
     </script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tính tổng</h1>
+    <div>
+      Nhập số thứ nhất
+      <input type="number" id="soThuNhat" />
+    </div>
+    <div>
+      Nhập số thứ hai
+      <input type="number" id="soThuHai" />
+    </div>
+    <div>
+      <button onclick="tinhToan('tong')">Tổng</button>
+      <button onclick="tinhToan('tong')">Tính Toán</button>
+      <button onclick="tinhToan('tong')">Tính Toán</button>
+      <button onclick="tinhToan('tong')">Tính Toán</button>
+      <div>Kết quả: <input type="number" id="ketQua" class="ket-qua" /></div>
+    </div>
+    <script>
+      function tinhToan(pheptinh) {
+        let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+        let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+        let canhBao = "";
+        if (!soThuNhat) {
+          canhBao += "Vui lòng nhập vào số thứ 1";
+        }
+        if (!soThuHai) {
+          canhBao += "Vui lòng nhập vào số thứ 2";
+        }
+        if (canhBao) {
+          alert(canhBao);
+        }
+        let ketQua = 0;
+        if (pheptinh == " cong") {
+          ketQua = soThuNhat + soThuHai;
+        } else if (pheptinh == " tru") {
+          ketQua = soThuNhat - soThuHai;
+        } else if (pheptinh == "nhan") {
+          ketQua = soThuNhat * soThuHai;
+        } else {
+          ketQua = soThuNhat / soThuHai;
+        }
+        document.getElementById("ketQua").value = ketQua;
+      }
+    </script>
+  </body>
+</html>
+>>>>>>> 120f7696b181a4c9a5704699316573ab044aceec
