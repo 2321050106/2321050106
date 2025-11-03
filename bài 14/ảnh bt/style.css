@@ -16,7 +16,7 @@ header {
   width: 70%;
   margin: auto;
 }
-nav {
+nav{
   display: flex;
   justify-content: space-between;
 }
@@ -27,7 +27,7 @@ nav {
   margin: 0px;
   padding: 0px;
 }
-.t-trai img {
+.t-trai img{
   width: 100px;
   height: 50px;
 }
@@ -38,12 +38,13 @@ nav {
   display: flex;
   align-items: center;
 }
-.t-phai {
+.t-phai{
   display: flex;
   list-style: none;
   padding: 0px;
+
 }
-.t-phai li {
+.t-phai li{
   margin-left: 18px;
   font-size: 17px;
   display: flex;
