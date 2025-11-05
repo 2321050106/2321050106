@@ -8,7 +8,7 @@ let danhSachPhim = [
     quocGia: "Việt Nam",
     poster: "../fpt/img/phim/640x396-muado.jpg",
     thoiLuong: "120 phút",
-    ter: "https://www.youtube.com/watch?v=UEqjUBGjvwI",
+    trailer: "https://www.youtube.com/watch?v=UEqjUBGjvwI",
   },
   {
     id: 2,
@@ -44,20 +44,21 @@ let infoQuocGia = document.getElementById("info-quocGia");
 let infoThoiLuong = document.getElementById("info-thoiLuong");
 let infoNamPhatHanh = document.getElementById("info-namPhatHanh");
 let infoTuoi = document.getElementById("info-tuoi");
-let trailerLink = document.getElementById("trailer-link")[0];
+let trailerLink = document.getElementById("trailer-link");
 
 function chonPhim(idPhim) {
   for (let i = 0; i < danhSachPhim.length; i++) {
     if (danhSachPhim[i].id == idPhim) {
       mainbanner2.src = danhSachPhim[i].poster;
 
+      trailerLink.href = danhSachPhim[i].traiLer;
       infoTenPhim.textContent = danhSachPhim[i].tenPhim;
       infoTheLoai.textContent = danhSachPhim[i].theLoai;
       infoQuocGia.textContent = danhSachPhim[i].quocGia;
       infoThoiLuong.textContent = danhSachPhim[i].thoiLuong;
       infoNamPhatHanh.textContent = danhSachPhim[i].namPhatHanh;
       infoTuoi.textContent = danhSachPhim[i].tuoi + "+";
-      trailerLink.href = danhSachPhim[i].traiLer;
+
       return;
     }
   }

@@ -159,7 +159,7 @@ footer {
 
 .banner {
   position: absolute;
-  top: 80%;
+  bottom: 0%;
   z-index: 10;
   color: white;
   width: 100%;
@@ -170,7 +170,7 @@ footer {
   color: white;
   border: none;
   padding: 10px 25px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1.1em;
   cursor: pointer;
   margin-top: 15px;
