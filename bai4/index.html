@@ -38,8 +38,58 @@
         <input type="radio" name="gioitinh" value="Nữ" /> Nữ
       </div>
       <div>
-        <input type="submit" value="Gửi thông tin" />
+        <p><b>Sở thích</b></p>
+        Game: <input type="checkbox" name="sothich" value="Game" /><br />
+        Bóng đá:<input type="checkbox" name="sothich" value="Bóng đá" /><br />
+        Du lịch:<input type="checkbox" name="sothich" value="Du lịch" /> <br />
+        Music:<input type="checkbox" name="sothich" value="Music" />
       </div>
+      <div>
+        <p><b>Trình duyệt hay sử dụng</b></p>
+        <input list="browsers" name="browser" />
+        <datalist id="browsers">
+          <option value="Chrome">Chrome</option>
+          <option value="CocCoc">CocCoc</option>
+          <option value="FireFox">FireFox</option>
+          <option value="Edge">Edge</option>
+        </datalist>
+        <select name="browser">
+          <option value="Chrome">Chrome</option>
+          <option value="CocCoc">CocCoc</option>
+          <option value="FireFox">FireFox</option>
+          <option value="Edge">Edge</option>
+        </select>
+      </div>
+      <div>0<input type="range" id="a" value="50" min="0" max="100" />100</div>
+      <div>
+        <input type="submit" /> <button>Click</button>
+        <input type="reset" />
+      </div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ZPhtT4p9_yk?si=jhN1DGQ8mZsBCxyd"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <marquee>
+        <img src="../anh/doibongtoiyeu.jfif" width="200px" height="300px" />
+      </marquee>
+      <video controls width="250">
+        <source src="../anh/bão 2024 (1).mp4" type="video/mp4" />
+      </video>
     </form>
+    ví dụ thẻ h1 &lt;h1&gt; là thẻ tiêu đề lớn nhất
   </body>
 </html>
