@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 4</title>
+  </head>
+  <body>
+    <h1>form tạo thông tin</h1>
+    <form action="">
+      <div>
+        <p><b>Họ và tên:</b></p>
+        <input type="text" name="HoVaTen" />
+      </div>
+      <!-- trong input nếu ko để type thì mặc định là text, nếu để type="text" thì
+      cũng là text -->
+      <div>
+        <p><b>Giới thiệu:</b></p>
+        <textarea name="gioithieu" id=""></textarea>
+      </div>
+      <!-- textarea là 1 thẻ dùng để nhập nhiều dòng, còn input thì chỉ nhập 1 dòng -->
+      <div>
+        <p><b>Email</b></p>
+        <input type="email" name="Email" />
+      </div>
+      <div>
+        <p><b>SĐT</b></p>
+        <input
+          type="tel"
+          name="SDT"
+          placeholder="Dạng số"
+          pattern="([0]{1})([9,3,6,8]{1})([0-9]{8})"
+        />
+      </div>
+      <div>
+        <p><b>Giới tính</b></p>
+        <input type="radio" name="gioitinh" value="Nam" /> Nam
+        <input type="radio" name="gioitinh" value="Nữ" /> Nữ
+      </div>
+      <div>
+        <input type="submit" value="Gửi thông tin" />
+      </div>
+    </form>
+  </body>
+</html>
