@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+header {
+  background-color: #6cb5f9;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+header img {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+main {
+  display: flex;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  min-height: 0;
+}
+.login {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  overflow-y: auto;
+  border-right: 2px solid #6cb5f9;
+}
+#dn {
+  margin-left: 20px;
+}
+input {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.text {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  min-width: 0;
+  overflow-y: auto;
+  margin-left: calc(20% + 20px);
+  padding-top: 1px;
+  padding-bottom: 40px;
+}
+.TinTuc {
+  border: 2px solid #6cb5f9;
+  margin: 20px 10px 20px 10px;
+}
+#tt1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+.ThongBao {
+  border: 2px solid #6cb5f9;
+  margin: 0px 10px 20px 10px;
+}
+#tt2 {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+}
+.HuongDan {
+  border: 2px solid #6cb5f9;
+  margin: 0px 10px 20px 10px;
+}
+#tt3 {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+}
+.CaiDat {
+  border: 2px solid #6cb5f9;
+  margin: 0px 10px 20px 10px;
+}
