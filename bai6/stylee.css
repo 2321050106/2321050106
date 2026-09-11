@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* tất cả các phần tử đều nằm gọn trong khung không bị tràn ra ngoài */
 }
 body {
   margin: 0;
@@ -7,7 +8,7 @@ body {
 }
 header {
   background-color: #6cb5f9;
-  height: 80px;
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,13 +27,15 @@ header a {
 }
 main {
   display: flex;
-  height: calc(100vh - 80px);
+  height: calc(
+    100vh - 50px
+  ); /*chiều cao của toàn màn hình trừ đi phần của header*/
   margin-top: 80px;
   min-height: 0;
 }
 .login {
   position: fixed;
-  top: 80px;
+  top: 50px;
   left: 0;
   bottom: 0;
   width: 20%;
@@ -49,28 +52,30 @@ input {
   border-radius: 5px;
 }
 .text {
-  flex: 1;
+  flex: 1; /*chiếm hết các phần còn lại của không gian thừa ra*/
   width: auto;
   height: 100%;
   min-width: 0;
-  overflow-y: auto;
+  overflow-y: auto; /* thanh cuốn dọc*/
   margin-left: calc(20% + 20px);
   padding-top: 1px;
   padding-bottom: 40px;
 }
 .TinTuc {
   border: 2px solid #6cb5f9;
-  margin: 20px 10px 20px 10px;
+  margin: 0px 10px 20px 10px;
+  border-radius: 7px;
 }
 #tt1 {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .ThongBao {
   border: 2px solid #6cb5f9;
   margin: 0px 10px 20px 10px;
+  border-radius: 7px;
 }
 #tt2 {
   display: flex;
@@ -83,6 +88,7 @@ input {
 .HuongDan {
   border: 2px solid #6cb5f9;
   margin: 0px 10px 20px 10px;
+  border-radius: 7px;
 }
 #tt3 {
   display: flex;
@@ -95,4 +101,5 @@ input {
 .CaiDat {
   border: 2px solid #6cb5f9;
   margin: 0px 10px 20px 10px;
+  border-radius: 7px;
 }
