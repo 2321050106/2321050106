@@ -103,3 +103,8 @@ input {
   margin: 0px 10px 20px 10px;
   border-radius: 7px;
 }
+.ngay_dang {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
