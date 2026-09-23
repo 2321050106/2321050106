@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <!-- internal javascript -->
+    <script>
+      // in ra màn hinh
+      document.writeln("Hello world! <br>");
+      //   khai báo biến
+      var ten = "Thái <br>";
+      document.writeln(ten);
+      ten = "Đức <br>";
+      document.writeln(ten);
+      var nam = 2026;
+      document.write(nam);
+      //phep toán
+      var soThuNhat = 10;
+      var soThuHai = 5;
+      var ketQua = 0;
+      //cộng +
+      document.writeln("<br>kết quả số thứ nhất + số thứ hai là: ");
+      ketQua = soThuNhat + soThuHai;
+      document.write(ketQua);
+      //trừ -
+      document.writeln("<br>kết quả số thứ nhất - số thứ hai là: ");
+      ketQua = soThuNhat - soThuHai;
+      document.write(ketQua);
+      //nhân
+      document.writeln("<br>kết quả số thứ nhất * số thứ hai là: ");
+      ketQua = soThuNhat * soThuHai;
+      document.write(ketQua);
+      //chia /
+      document.writeln("<br>kết quả số thứ nhất / số thứ hai là: ");
+      ketQua = soThuNhat / soThuHai;
+      document.write(ketQua);
+      //chia lây dư%
+      document.writeln("<br>kết quả số thứ nhất % số thứ hai là: ");
+      ketQua = soThuNhat % soThuHai;
+      document.write(ketQua);
+      //++
+      document.writeln("<br>");
+      document.writeln(++soThuNhat);
+      //--
+      document.writeln("<br>");
+      document.writeln(--soThuHai);
+      //+=
+      document.writeln("<br>");
+      soThuNhat += soThuHai;
+      document.writeln(soThuNhat);
+      //-=
+      document.writeln("<br>");
+      soThuNhat -= soThuHai;
+      document.writeln(soThuNhat);
+      var ho = "Phạm";
+      document.writeln("<br>" + ho + " " + ten);
+      document.writeln("<br>");
+      //kiểm tra độ dài của biến
+      document.writeln(ho.length);
+      //kiểm tra kiểu dữ liệu của biến
+      document.writeln(typeof ho);
+      document.writeln("<br>");
+      //kiểm tra vị trí kí tự trong chuỗi
+      var hoTen = "Nguyễn Đình Thái";
+      document.writeln(hoTen.indexOf("g"));
+      document.writeln("<br>");
+      //kiểm tra kí tự có trong chuỗi hay không
+      document.writeln(hoTen.includes("m"));
+      document.writeln("<br>");
+      //kiểm tra chuỗi có bắt đầu bằng kí tự ko
+      document.writeln(hoTen.startsWith("Nguyễn"));
+      //thay th kí tự
+      document.writeln(hoTen.replace("Nguyễn", "Phạm"));
+      document.write(hoTen.toUpperCase());
+      document.write(hoTen.toLocaleLowerCase());
+    </script>
+    <!-- external javascript  -->
+    <script src="script.js"></script>
+  </body>
+</html>
