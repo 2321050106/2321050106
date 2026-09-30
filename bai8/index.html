@@ -74,8 +74,124 @@
       document.writeln(hoTen.startsWith("Nguyễn"));
       //thay th kí tự
       document.writeln(hoTen.replace("Nguyễn", "Phạm"));
+      document.write("<br>");
       document.write(hoTen.toUpperCase());
       document.write(hoTen.toLocaleLowerCase());
+      //date
+      var homNay = new Date();
+      document.write("<br>");
+      document.write(homNay);
+
+      var ngay = new Date("7 / 4 / 2005");
+      document.write("<br>");
+      document.write(ngay);
+
+      var namNay = homNay.getFullYear();
+      document.write("<br>");
+      document.write(namNay);
+      var thangNay = homNay.getMonth();
+      document.write("<br>");
+      document.write(thangNay);
+
+      var ngayhomNay = homNay.getDate();
+      document.write("<br>");
+      document.write(ngayhomNay);
+
+      var thuhomNay = homNay.getDay();
+      document.write("<br>");
+      document.write(thuhomNay);
+
+      document.write("<br>");
+      document.write(
+        "hôm nay là ngày " + ngayhomNay + " thứ " + (thuhomNay + 1),
+      );
+
+      //mảng
+      var mang = [1, 2, 3, 4, 5];
+      document.write("<br>");
+      document.writeln(mang[2]);
+      document.write("<br>");
+      document.writeln(mang.length);
+
+      var mangTen = ["Đức", "Thái", "Tuấn", "Trường"];
+      document.write("<br>");
+      document.write(mangTen[0]);
+
+      var d = mang.concat(mangTen);
+      document.write("<br>");
+      document.write(d);
+      //join biến mảng thành chuỗi
+      var d = mang.concat(mangTen);
+      document.write("<br>");
+      document.write(d.join("-"));
+      //lấy ra phần tử cuối cùng trong mảng
+      document.write("<br>");
+      document.write(d.pop());
+      document.write("<br>");
+      //thêm phần tử vào cuối mảng
+      d.push("Công");
+      document.write(d);
+      document.write("<br>");
+      //đảo ngược mảng
+      document.write(mang.reverse());
+      document.write("<br>");
+      //object
+      var thongtinSV = {
+        ten: "Phạm Đức",
+        namSinh: 2005,
+        queQuan: {
+          thanhpho: "Hải Phòng",
+          xa: "Hợp Tiến",
+        },
+      };
+      document.write(thongtinSV.queQuan.xa);
+      tuoi = namNay - thongtinSV.namSinh;
+      thongtinSV.Tuoi = tuoi;
+      document.write(thongtinSV.Tuoi);
+      document.write("<br>");
+      //boolean: true nam / flase nữ
+      thongtinSV.gioiTinh = true;
+
+      var sinhVien = [
+        {
+          ten: "Nguyễn Đình Thái",
+          namSinh: 2005,
+          queQuan: {
+            thanhpho: "Thái Nguyên",
+            xa: "Định Hóa",
+          },
+        },
+        {
+          ten: "Phạm Đức",
+          namSinh: 2005,
+          queQuan: {
+            thanhpho: "Hải Phòng",
+            xa: "Hợp Tiến",
+          },
+        },
+      ];
+      // console.log(sinhVien);
+
+      //== != < >
+      //=== so sánh cả về kiểu dữ liệu
+      var so1 = "10";
+      var so2 = 5;
+      document.write("<br>");
+      document.writeln(so1 == so2);
+
+      if (thuhomNay >= 6) {
+        document.write("Cuối tuần");
+      } else {
+        document.write("Đi học");
+      }
+
+      //tìm số chẵn số lẻ
+      var so = 5;
+      if (so % 2 == 0) {
+        document.write("số chẵn");
+      } else {
+        document.write("số lẻ");
+      }
     </script>
     <!-- external javascript  -->
     <script src="script.js"></script>
