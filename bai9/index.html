@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS2</title>
+  </head>
+  <body>
+    <script>
+      //function chỉ hiển thị khi được gọi
+      //không tham số
+      function sayHello() {
+        document.write("Hello World");
+      }
+      sayHello();
+      //có tham số
+      function sayHello2(name) {
+        document.write("<br>Hello " + name);
+      }
+      sayHello2("Phạm Đức");
+
+      function so(a, b) {
+        if (typeof a !== "number" || typeof b !== "number") {
+          document.write("<br>Vui lòng nhập số");
+          return;
+        }
+        document.write("<br>" + a + " + " + b + " = " + (a + b));
+      }
+      var so1 = Number(prompt("Nhập số thứ 1"));
+      var so2 = Number(prompt("Nhập số thứ 2"));
+      so(so1, so2);
+      document.write("<br>");
+
+      function tinhDiemChu(diem) {
+        if (diem >= 8.5) {
+          return "A";
+        } else if (diem >= 7) {
+          return "B";
+        } else if (diem >= 5.5) {
+          return "C";
+        } else if (diem >= 4) {
+          return "D";
+        } else {
+          return "F";
+        }
+      }
+
+      function DiemTB(A, B, C) {
+        if (
+          typeof A !== "number" ||
+          typeof B !== "number" ||
+          typeof C !== "number"
+        ) {
+          document.write("<br>Vui lòng nhập số");
+          return;
+        }
+        if (A < 0 || A > 10 || B < 0 || B > 10 || C < 0 || C > 10) {
+          document.write("<br>Điểm phải nằm trong khoảng từ 0 đến 10");
+          return;
+        }
+        var diemTB = (A + B + C) / 3;
+        var diemChu = tinhDiemChu(diemTB);
+        document.write("<br>Điểm trung bình: " + diemTB.toFixed(2));
+        document.write("<br>Điểm chữ: " + diemChu);
+        document.write("<br>Điểm A:" + A);
+        document.write("<br>Điểm B:" + B);
+        document.write("<br>Điểm C:" + C);
+      }
+      var diemA = Number(prompt("Nhập điểm A"));
+      var diemB = Number(prompt("Nhập điểm B"));
+      var diemC = Number(prompt("Nhập điểm C"));
+      DiemTB(diemA, diemB, diemC);
+      //Viết hàm tính điểm chữ dựa trên 3 đầu điểm ABC
+      //A.0.6
+    </script>
+  </body>
+</html>
