@@ -6,32 +6,20 @@
     <title>JS2</title>
   </head>
   <body>
+    <div>Nhập điểm A: <input type="number" id="diemA" /></div>
+    <div>Nhập điểm B: <input type="number" id="diemB" /></div>
+    <div>Nhập điểm C: <input type="number" id="diemC" /></div>
+    <button onclick="hienThiDiem()">Tính điểm</button>
+    <p id="ketqua"></p>
+    <div>Tuổi: <input type="number" id="namSinh" /></div>
+    <button onclick="hienThiTuoi()">Tính Tuổi</button>
+    <p id="ketquaTuoi"></p>
     <script>
-      //function chỉ hiển thị khi được gọi
-      //không tham số
-      function sayHello() {
-        document.write("Hello World");
-      }
-      sayHello();
-      //có tham số
-      function sayHello2(name) {
-        document.write("<br>Hello " + name);
-      }
-      sayHello2("Phạm Đức");
-
-      function so(a, b) {
-        if (typeof a !== "number" || typeof b !== "number") {
-          document.write("<br>Vui lòng nhập số");
-          return;
-        }
-        document.write("<br>" + a + " + " + b + " = " + (a + b));
-      }
-      var so1 = Number(prompt("Nhập số thứ 1"));
-      var so2 = Number(prompt("Nhập số thứ 2"));
-      so(so1, so2);
-      document.write("<br>");
-
-      function tinhDiemChu(diem) {
+      function tinhDiemChu() {
+        var A = parseFloat(document.getElementById("diemA").value);
+        var B = parseFloat(document.getElementById("diemB").value);
+        var C = parseFloat(document.getElementById("diemC").value);
+        var diem = A * 0.6 + B * 0.3 + C * 0.1;
         if (diem >= 8.5) {
           return "A";
         } else if (diem >= 7) {
@@ -40,38 +28,50 @@
           return "C";
         } else if (diem >= 4) {
           return "D";
-        } else {
+        } else if (diem >= 0 && diem < 4) {
           return "F";
+        } else {
+          return "Điểm không hợp lệ";
         }
       }
+      function hienThiDiem() {
+        document.getElementById("ketqua").innerHTML =
+          "Điểm chữ: " + tinhDiemChu();
 
-      function DiemTB(A, B, C) {
-        if (
-          typeof A !== "number" ||
-          typeof B !== "number" ||
-          typeof C !== "number"
-        ) {
-          document.write("<br>Vui lòng nhập số");
-          return;
-        }
-        if (A < 0 || A > 10 || B < 0 || B > 10 || C < 0 || C > 10) {
-          document.write("<br>Điểm phải nằm trong khoảng từ 0 đến 10");
-          return;
-        }
-        var diemTB = (A + B + C) / 3;
-        var diemChu = tinhDiemChu(diemTB);
-        document.write("<br>Điểm trung bình: " + diemTB.toFixed(2));
-        document.write("<br>Điểm chữ: " + diemChu);
-        document.write("<br>Điểm A:" + A);
-        document.write("<br>Điểm B:" + B);
-        document.write("<br>Điểm C:" + C);
+        //innerHTML: thuộc tính của đối tượng document, dùng để thay đổi nội dung của thẻ HTML
       }
-      var diemA = Number(prompt("Nhập điểm A"));
-      var diemB = Number(prompt("Nhập điểm B"));
-      var diemC = Number(prompt("Nhập điểm C"));
-      DiemTB(diemA, diemB, diemC);
-      //Viết hàm tính điểm chữ dựa trên 3 đầu điểm ABC
-      //A.0.6
+      function tinhTuoi() {
+        var namSinh = parseInt(document.getElementById("namSinh").value);
+        var namHienTai = new Date().getFullYear();
+        return namHienTai - namSinh;
+      }
+      function hienThiTuoi() {
+        document.getElementById("ketquaTuoi").innerHTML =
+          "Tuổi của bạn là: " + tinhTuoi();
+      }
+      //function chỉ hiển thị khi được gọi
+      //không tham số
+      // function sayHello() {
+      //   document.write("Hello World");
+      // }
+      // sayHello();
+      // //có tham số
+      // function sayHello2(name) {
+      //   document.write("<br>Hello " + name);
+      // }
+      // sayHello2("Phạm Đức");
+
+      // function so(a, b) {
+      //   if (typeof a !== "number" || typeof b !== "number") {
+      //     document.write("<br>Vui lòng nhập số");
+      //     return;
+      //   }
+      //   document.write("<br>" + a + " + " + b + " = " + (a + b));
+      // }
+      // var so1 = Number(prompt("Nhập số thứ 1"));
+      // var so2 = Number(prompt("Nhập số thứ 2"));
+      // so(so1, so2);
+      // document.write("<br>");
     </script>
   </body>
 </html>
