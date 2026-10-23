@@ -38,7 +38,33 @@
     </header>
     <main>
       <div class="banner">
-        <a href=""><img src="/anh/netflix/banner.png" alt="" /></a>
+        <img
+          onclick="trailer()"
+          class="banner-img"
+          id="bannerAnh"
+          src="/anh/netflix/banner.png"
+          alt=""
+        />
+
+        <div style="display: none" id="trailer">
+          <iframe
+            class="banner-img"
+            src="https://www.youtube.com/embed/UZUwhZYs2yg?si=3xivSyyR3Jxqh26r"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <div class="danh-sach-the-loai">
         <div class="co-the-ban-chua-xem">
@@ -123,5 +149,6 @@
         <a href="#">Thông báo pháp lý</a>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
