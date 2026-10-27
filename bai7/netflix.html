@@ -39,76 +39,247 @@
     <main>
       <div class="banner">
         <img
-          onclick="trailer()"
+          onclick="PhatTrailer()"
           class="banner-img"
           id="bannerAnh"
           src="/anh/netflix/banner.png"
           alt=""
         />
 
-        <div style="display: none" id="trailer">
-          <iframe
-            class="banner-img"
-            src="https://www.youtube.com/embed/UZUwhZYs2yg?si=3xivSyyR3Jxqh26r"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <iframe
+          id="trailer"
+          style="display: none"
+          class="banner-img"
+          src="https://www.youtube.com/embed/UZUwhZYs2yg?si=3xivSyyR3Jxqh26r"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
       <div class="danh-sach-the-loai">
         <div class="co-the-ban-chua-xem">
           <p>Có thể bạn chưa xem</p>
           <div class="phim">
-            <a href="#"><img src="/anh/netflix/phim1 (1).png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim2 (2).png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim3 (3).png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim4 (4).png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim5 (5).png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim7 (6).png" alt="" /></a>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/anh/netflix/phim1 (1).png"
+                data-trailer="https://www.youtube.com/embed/JOGp2c7-cKc?si=NQ-0v-xgPFqUXC4V"
+                alt="phim1"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/anh/netflix/phim2 (2).png"
+                data-trailer="https://www.youtube.com/embed/04FcbCFmisI?si=SoyX94kS4jFl3eOk"
+                alt="phim2"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/anh/netflix/phim3 (3).png"
+                data-trailer="https://www.youtube.com/embed/3JTVQTk36R8?si=Bdzcnwib6uurYqxP"
+                alt="phim3"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/anh/netflix/phim4 (4).png"
+                data-trailer="https://www.youtube.com/embed/glgmAwRDP8s?si=jtwajWZwFvv30S7j"
+                alt="phim4"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/anh/netflix/phim5 (5).png"
+                data-trailer="https://www.youtube.com/embed/2rShZls4Ffw?si=L_fBjB6P2zJ8eW-X"
+                alt="phim5"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/anh/netflix/phim7 (6).png"
+                data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+                alt="phim6"
+              />
+            </div>
           </div>
         </div>
         <div class="co-the-ban-chua-xem">
           <p>Phim hài hước</p>
           <div class="phim">
-            <a href="#"><img src="/anh/netflix/phim8 (7).png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim9 (8).png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim10.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim11.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim12.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim13.png" alt="" /></a>
+            <img
+              onclick="doiBanner(this)"
+              id="trailer-phim"
+              src="/anh/netflix/phim8 (7).png"
+              data-trailer="https://www.youtube.com/embed/vJNUj4Jq9Bs?si=doEoZ58G3pKQnnaB"
+              alt="phim7"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim9 (8).png"
+              data-trailer="https://www.youtube.com/embed/6vWg_-ot_Q8?si=VwFUeGW19d1SXKQ6"
+              alt="phim8"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim10.png"
+              data-trailer="https://www.youtube.com/embed/9CSRAY6YYdU?si=VNi5TvgF-cCTl6UO"
+              alt="phim9"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim11.png"
+              data-trailer="https://www.youtube.com/embed/cheTKN92K0o?si=nrTaLNFxPJnnlOo1"
+              alt="phim10"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim12.png"
+              data-trailer="https://www.youtube.com/embed/7Wy3P1Vva4Q?si=_cKO0Q9U8u0ajj5F"
+              alt="phim11"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim13.png"
+              data-trailer="https://www.youtube.com/embed/Pjul1QfzBIM?si=9diRpwhW8TPCikIj"
+              alt="phim12"
+            />
           </div>
         </div>
         <div class="co-the-ban-chua-xem">
           <p>Hoạt hình</p>
           <div class="phim">
-            <a href="#"><img src="/anh/netflix/phim14.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim15.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim16.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim17.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim18.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim19.png" alt="" /></a>
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim14.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim13"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim15.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim14"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim16.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim15"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim17.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim16"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim18.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim17"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim19.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim18"
+            />
           </div>
         </div>
         <div class="co-the-ban-chua-xem">
           <p>Mọi người đang xem</p>
           <div class="phim">
-            <a href="#"><img src="/anh/netflix/phim20.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim21.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim23.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim24.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim25.png" alt="" /></a>
-            <a href="#"><img src="/anh/netflix/phim26.png" alt="" /></a>
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim20.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim19"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim21.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim20"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim23.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim21"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim24.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim22"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim25.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim23"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/anh/netflix/phim26.png"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim24"
+            />
           </div>
         </div>
         <div class="co-the-ban-chua-xem">
