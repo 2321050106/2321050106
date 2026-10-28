@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .video {
+        display: block;
+        margin: 0 auto;
+      }
+      .ten {
+        display: block;
+        margin: auto;
+      }
+      .danhsach {
+        width: 80%;
+        display: flex;
+        margin: 50px auto;
+        justify-content: space-between;
+      }
+      .anh {
+        width: 28%;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Manf xem-->
+    <iframe
+      class="video"
+      width="75%"
+      height="500"
+      src="https://www.youtube.com/embed/INJuqE_34eQ?si=cf1OQJUfhxW5bdRW"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <h3 class="ten">3 Phải 6 Đừng</h3>
+    <div class="danhsach">
+      <div class="anh" onclick="chonVid(1)">
+        <img src="../anh/netflix/phim10.png" alt="" />
+        <p>Hala Madrid</p>
+      </div>
+      <div class="anh" onclick="chonVid(2)">
+        <img src="../anh/netflix/phim12.png" alt="" />
+        <p>Hoa và váy</p>
+      </div>
+      <div class="anh" onclick="chonVid(3)">
+        <img src="../anh/netflix/phim5 (5).png" alt="" />
+        <p>Bài này không để đi diễn</p>
+      </div>
+      <div class="anh" onclick="chonVid(4)">
+        <img src="../anh/netflix/phim26.png" alt="" />
+        <p>gói con tim làm quà</p>
+      </div>
+    </div>
+    <script>
+      var danhsachvd = [
+        {
+          id: 1,
+          ten: "Hala Madrid",
+          duongDananh: "phim10.png",
+          duongdanlink:
+            "https://www.youtube.com/embed/eKPeEyAL6GI?si=Ik1Y1RyjlmWVwXN2",
+        },
+        {
+          id: 2,
+          ten: "Hoa và váy",
+          duongDananh: "phim12.png",
+          duongdanlink:
+            "https://www.youtube.com/embed/9zgZ-wsqZgQ?si=xGdRA4yGN-7xHUZc",
+        },
+        {
+          id: 3,
+          ten: "bài này không để đi diễn",
+          duongDananh: "phim5 (5).png",
+          duongdanlink:
+            "https://www.youtube.com/embed/i0yxWxk_e20?si=ip7wou4kTtubKOEn",
+        },
+        {
+          id: 4,
+          ten: "gói con tim làm quà",
+          duongDananh: "phim26.png",
+          duongdanlink:
+            "https://www.youtube.com/embed/72qtZ2ezb44?si=36JKx_nOyAD1vp2o",
+        },
+      ];
+      function chonVid(id) {
+        for (let i = 0; i < danhsachvd.length; i++) {
+          if (danhsachvd[i].id == id) {
+            document.getElementsByClassName("ten")[0].innerHTML =
+              danhsachvd[i].ten;
+            document.getElementsByTagName("iframe")[0].src =
+              danhsachvd[i].duongdanlink;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
